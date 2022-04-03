@@ -6,24 +6,17 @@ namespace myTiles {
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
             case "level1":
-            case "level1":return tiles.createTilemap(hex`10001000020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202050505020202020202020202020202040b03030602020202020202020202020403090a07050202020202020202020204030a0301010602020202020202020202080808080802020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . 2 2 2 2 2 . . . . . 
-. . . . . . 2 . . . 2 . . . . . 
-. . . . . . 2 . 2 . 2 2 2 . . . 
-. . . . . . 2 . . . . . 2 . . . 
-. . . . . . 2 2 2 2 2 2 2 . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.castle.tilePath5,sprites.castle.tileGrass3,sprites.castle.tilePath6,sprites.castle.tilePath8,sprites.castle.tilePath4,sprites.castle.tilePath7,sprites.castle.tilePath2,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,sprites.skillmap.islandTile4], TileScale.Sixteen);
+            case "level1":return tiles.createTilemap(hex`11000900020202020202020202020202020202020206060606060606060606060606060606060603030603030603030603030603030306060104030303060303060104030303030606030306010403010403030306030303060603050603030603030603030603030306060606060606060606060606060606060602020202020202020202020202020202020202020202020202020202020202020202`, img`
+. . . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 . . 2 . . 2 . . 2 . . 2 . . . 2 
+2 . . . . . 2 . . 2 . . . . . . 2 
+2 . . 2 . . . . . . . . 2 . . . 2 
+2 . . 2 . . 2 . . 2 . . 2 . . . 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+. . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.castle.tilePath5,sprites.castle.tileGrass3,sprites.castle.tileGrass1,sprites.skillmap.islandTile4,sprites.dungeon.floorDark0], TileScale.Sixteen);
         }
         return null;
     })
